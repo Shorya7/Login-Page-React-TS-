@@ -6,12 +6,17 @@ import { useNavigate } from 'react-router-dom';
 import logo from '../assets/logbg.svg';
 import toast from 'react-hot-toast';
 import MenuItem from "@mui/material/MenuItem";
+import { useTheme } from '@mui/material/styles';
+// import { useColorMode } from './Theme';
 
 const Form: React.FC = () => {
   const [name, setName] = useState<string>('');
   const [role, setRole] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const navigate = useNavigate();
+
+  const theme = useTheme();
+  // const colorMode = useColorMode();
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
@@ -38,8 +43,8 @@ const Form: React.FC = () => {
 
 
   return (
-    <div className="fullsc">
-      <div className="mainbody">
+    <div className="fullsc" >
+      <div className="mainbody" style={{ backgroundColor: theme.palette.background.default, color: theme.palette.text.primary }}>
         <div className="left_side">
           <div className="left_logo">
             <img src={logo} alt="GrowMeOrganic" />
