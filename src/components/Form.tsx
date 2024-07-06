@@ -3,7 +3,7 @@ import './form.css';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { useNavigate } from 'react-router-dom';
-import logo from '../assets/GMO_logo.webp';
+import logo from '../assets/logbg.svg';
 import toast from 'react-hot-toast';
 import MenuItem from "@mui/material/MenuItem";
 
@@ -12,7 +12,7 @@ const Form: React.FC = () => {
   const [role, setRole] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const navigate = useNavigate();
-  
+
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (validateUser(name, role, password)) {
@@ -58,10 +58,10 @@ const Form: React.FC = () => {
                 m: 2,
                 width: "40ch",
                 "@media (max-width: 410px)": {
-                  width: "30ch",
+                  width: "35ch",
                 },
-                "@media (max-width: 338px)": {
-                  width: "28ch",
+                "@media (max-width: 360px)": {
+                  width: "30ch",
                 },
                 "@media (max-width: 320px)": {
                   width: "26ch",
@@ -101,10 +101,10 @@ const Form: React.FC = () => {
                   m: 2,
                   width: "40ch",
                   "@media (max-width: 410px)": {
-                    width: "30ch",
+                    width: "35ch",
                   },
-                  "@media (max-width: 338px)": {
-                    width: "28ch",
+                  "@media (max-width: 360px)": {
+                    width: "30ch",
                   },
                   "@media (max-width: 320px)": {
                     width: "26ch",
@@ -141,10 +141,10 @@ const Form: React.FC = () => {
                   m: 2,
                   width: "40ch",
                   "@media (max-width: 410px)": {
-                    width: "30ch",
+                    width: "35ch",
                   },
-                  "@media (max-width: 338px)": {
-                    width: "28ch",
+                  "@media (max-width: 360px)": {
+                    width: "30ch",
                   },
                   "@media (max-width: 320px)": {
                     width: "26ch",
