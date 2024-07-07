@@ -12,7 +12,7 @@ https://login-page-react-ts.netlify.app/
     ```bash
     cd Login-Page-React-TS-
     ```
-3. Install NPM packages for backend and frontend:
+3. Install NPM packages for frontend:
     ```bash
     npm install
     ```
