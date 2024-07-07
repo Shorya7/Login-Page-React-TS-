@@ -10,7 +10,7 @@ https://login-page-react-ts.netlify.app/
     ```
 2. Navigate to the project directory:
     ```bash
-    cd Login-Page-React_-TS
+    cd Login-Page-React-TS
     ```
 3. Install NPM packages for backend and frontend:
     ```bash
